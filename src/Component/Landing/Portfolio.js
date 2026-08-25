@@ -11,7 +11,6 @@ import {
   GraduationCap,
   Star,
   ArrowRight,
-  Phone,
   Layers,
   CheckCircle2,
   Calendar,
@@ -384,8 +383,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-    
-
       {/* ================= MODAL ================= */}
       {selected && (
         <div className="di-pf-modal" onClick={() => setSelected(null)}>
@@ -430,7 +427,7 @@ const Portfolio = () => {
                   Build Similar <ArrowRight size={16} />
                 </Link>
                 <a href="tel:+918602373876" className="di-btn-outline">
-                  <Phone size={15} /> Talk to Expert
+                  Talk to Expert
                 </a>
               </div>
             </div>
