@@ -1,0 +1,558 @@
+/* =========================================================
+   DIMENSION INFOTECH — FOOTER (COMPACT · DARK · ORANGE)
+   ========================================================= */
+
+.di-footer {
+  background: #070b14;
+  color: #cbd5e1;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.di-footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =============== CTA STRIP =============== */
+.di-footer-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 26px 0;
+  background:
+    radial-gradient(circle at 88% 40%, rgba(249, 115, 22, 0.2), transparent 42%),
+    linear-gradient(135deg, #0f172a 0%, #131c30 55%, #0b1220 100%);
+  border-bottom: 1px solid rgba(249, 115, 22, 0.16);
+}
+
+.di-footer-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f97316, #facc15, #f97316, transparent);
+  opacity: 0.7;
+}
+
+.di-footer-cta-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.di-footer-cta-text h3 {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+  margin: 0 0 3px 0;
+  line-height: 1.3;
+}
+
+.di-footer-cta-text p {
+  color: #94a3b8;
+  font-size: 13.5px;
+  margin: 0;
+}
+
+.di-footer-cta-btns {
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
+}
+
+.di-footer-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 21px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.di-footer-cta-call {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
+}
+
+.di-footer-cta-call:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(249, 115, 22, 0.44);
+}
+
+.di-footer-cta-call:active { transform: translateY(-1px) scale(0.97); }
+
+.di-footer-cta-quote {
+  background: rgba(255, 255, 255, 0.07);
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.di-footer-cta-quote:hover {
+  background: rgba(249, 115, 22, 0.16);
+  border-color: rgba(249, 115, 22, 0.45);
+  color: #fdba74 !important;
+  transform: translateY(-3px);
+}
+
+.di-footer-cta-quote:active { transform: translateY(-1px) scale(0.97); }
+
+/* =============== MAIN FOOTER =============== */
+.di-footer-main {
+  padding: 34px 0 24px;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(249, 115, 22, 0.06), transparent 28%),
+    #070b14;
+}
+
+.di-footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr 1.05fr 1.6fr;
+  gap: 26px;
+}
+
+/* ---------- LOGO (TRANSPARENT) ---------- */
+.di-footer-brand {
+  display: inline-block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.di-footer-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: screen;
+  background: transparent;
+  transition: all 0.32s ease;
+  filter: drop-shadow(0 4px 14px rgba(249, 115, 22, 0.3));
+}
+
+.di-footer-brand:hover .di-footer-logo-img {
+  transform: translateY(-2px) scale(1.04);
+  filter: drop-shadow(0 8px 20px rgba(249, 115, 22, 0.5)) brightness(1.08);
+}
+
+.di-footer-about-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin: 0 0 15px 0;
+  max-width: 320px;
+}
+
+/* ---------- SOCIAL ---------- */
+.di-footer-social {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.di-footer-social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.di-footer-social-link:hover {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  border-color: #f97316;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(249, 115, 22, 0.32);
+}
+
+/* WhatsApp special */
+.di-social-wa {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.35);
+  color: #25d366;
+}
+
+.di-social-wa:hover {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-color: #25d366;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 211, 102, 0.4);
+}
+
+/* ---------- HEADINGS ---------- */
+.di-footer-heading {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 0 14px 0;
+  position: relative;
+  padding-bottom: 9px;
+}
+
+.di-footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 2.5px;
+  background: linear-gradient(90deg, #f97316, #facc15);
+  border-radius: 999px;
+}
+
+/* ---------- LINKS ---------- */
+.di-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.di-footer-links li { margin-bottom: 8px; }
+
+.di-footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.28s ease;
+  display: inline-block;
+}
+
+.di-footer-links a:hover {
+  color: #fb923c;
+  padding-left: 6px;
+}
+
+/* ---------- CONTACT ---------- */
+.di-footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.di-footer-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 11px;
+  font-size: 12.7px;
+  color: #94a3b8;
+  line-height: 1.55;
+}
+
+.di-footer-contact-list li svg {
+  color: #f97316;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.di-footer-contact-list a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.28s ease;
+  word-break: break-word;
+}
+
+.di-footer-contact-list a:hover { color: #fb923c; }
+
+/* PHONES — 2 UPAR, 2 NICHE (2x2 GRID) */
+.di-footer-phones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 14px;
+  width: 100%;
+}
+
+.di-footer-phones-grid a {
+  font-size: 12.7px;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.di-footer-phones-grid a:hover {
+  color: #fb923c;
+  transform: translateX(2px);
+}
+
+/* MAILS */
+.di-footer-mails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* =============== BOTTOM BAR =============== */
+.di-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 13px 0;
+  background: #05080f;
+}
+
+.di-footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.di-footer-bottom p {
+  margin: 0;
+  font-size: 12.3px;
+  color: #64748b;
+}
+
+.di-footer-bottom strong { color: #f97316; }
+
+.di-footer-bottom-web a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-size: 12.3px;
+  font-weight: 600;
+  transition: color 0.28s ease;
+}
+
+.di-footer-bottom-web a:hover { color: #f97316; }
+
+/* =========================================================
+   FLOATING WHATSAPP BUTTON
+   ========================================================= */
+.di-wa-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.42);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.di-wa-float:hover {
+  transform: translateY(-4px) scale(1.07);
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.58);
+}
+
+.di-wa-float:active { transform: scale(0.95); }
+
+.di-wa-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: diWaPulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes diWaPulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 992px) {
+  .di-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+  }
+
+  .di-footer-about-text { max-width: 100%; }
+}
+
+@media (max-width: 576px) {
+  .di-footer-cta { padding: 22px 0; }
+
+  .di-footer-cta-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .di-footer-cta-text h3 { font-size: 17px; }
+  .di-footer-cta-text p { font-size: 12.5px; }
+
+  .di-footer-cta-btns {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .di-footer-cta-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 14px;
+  }
+
+  .di-footer-main { padding: 28px 0 20px; }
+
+  .di-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .di-footer-logo-img { height: 42px; }
+
+  .di-footer-phones-grid {
+    gap: 5px 10px;
+  }
+
+  .di-footer-phones-grid a { font-size: 12.2px; }
+
+  .di-footer-contact-list a { font-size: 12.4px; }
+
+  .di-footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+
+  .di-wa-float {
+    right: 16px;
+    bottom: 16px;
+    width: 50px;
+    height: 50px;
+  }
+}
+/* Main number highlight */
+.di-footer-phones-grid a.di-main-no {
+  color: var(--primary, #f97316);
+  font-weight: 800;
+}
+
+.di-footer-phones-grid a.di-main-no:hover {
+  color: #fcd34d;
+}
+/* =========================================================
+   ADMISSION BADGE
+   ========================================================= */
+.di-footer-admission {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 16px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  text-decoration: none;
+  background: rgba(249, 115, 22, 0.11);
+  border: 1px dashed rgba(249, 115, 22, 0.45);
+  transition: all 0.32s ease;
+}
+
+.di-footer-admission:hover {
+  background: rgba(249, 115, 22, 0.19);
+  border-color: #f97316;
+  border-style: solid;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(249, 115, 22, 0.22);
+}
+
+.di-adm-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(249, 115, 22, 0.32);
+  transition: transform 0.32s ease;
+}
+
+.di-footer-admission:hover .di-adm-icon { transform: rotate(6deg) scale(1.07); }
+
+.di-adm-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.di-adm-text strong {
+  font-size: 12.5px;
+  font-weight: 850;
+  color: #fb923c;
+  letter-spacing: 0.3px;
+}
+
+.di-adm-text {
+  font-size: 11.5px;
+  color: #cbd5e1;
+  font-weight: 650;
+}
+
+.di-footer-admission > svg {
+  color: #fb923c;
+  flex-shrink: 0;
+  transition: transform 0.32s ease;
+}
+
+.di-footer-admission:hover > svg { transform: translateX(4px); }
+
+/* =========================================================
+   HOT LINK (New badge)
+   ========================================================= */
+.di-footer-links a.di-link-hot {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #fb923c;
+  font-weight: 750;
+}
+
+.di-footer-links a.di-link-hot:hover { color: #fcd34d; }
+
+.di-hot-tag {
+  font-size: 8.8px;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  padding: 2px 7px;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(249, 115, 22, 0.4);
+  animation: diPulseTag 2.2s ease-in-out infinite;
+}
+
+@keyframes diPulseTag {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.07); opacity: 0.88; }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .di-footer-admission { width: 100%; padding: 9px 13px; }
+  .di-adm-icon { width: 33px; height: 33px; }
+  .di-adm-text strong { font-size: 12px; }
+}
