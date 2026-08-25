@@ -7,7 +7,6 @@ import {
   Clock,
   Globe,
   Star,
-  CheckCircle2,
   MessageCircle,
   ArrowRight,
   Loader2
@@ -15,8 +14,8 @@ import {
 import './Contact.css';
 
 // ⚠️ Configuration Settings
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzPq1Fsv7a06OsjUosY3ePEs9heA5KA1yBU8Rpxcv1geOzjNgTfddPqVj3hufBlLUe1/exec"; // Apni Web App URL yahan daalein
-const SECRET_TOKEN = "MySecretToken12345"; // Same token as Apps Script
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzPq1Fsv7a06OsjUosY3ePEs9heA5KA1yBU8Rpxcv1geOzjNgTfddPqVj3hufBlLUe1/exec";
+const SECRET_TOKEN = "MySecretToken12345";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -57,7 +56,7 @@ const Contact = () => {
     setSending(true);
     setErrorMessage('');
 
-    // Security Check: Agar honeypot fill hua ho (fake bot submission)
+    // Security Check: Honeypot trigger check
     if (form.website_hp) {
       setSending(false);
       setSent(true);
@@ -65,11 +64,10 @@ const Contact = () => {
     }
 
     try {
-      // Direct POST request to Apps Script
       const response = await fetch(SCRIPT_URL, {
         method: 'POST',
         headers: {
-          'Content-Type': 'text/plain;charset=utf-8' // CORS issues avoid karne ke liye text/plain best hai
+          'Content-Type': 'text/plain;charset=utf-8'
         },
         body: JSON.stringify({
           token: SECRET_TOKEN,
@@ -252,7 +250,6 @@ const Contact = () => {
 
               {sent && (
                 <div className="di-form-success">
-                  <CheckCircle2 size={18} />
                   Thank you! Your inquiry has been submitted successfully.
                 </div>
               )}
@@ -264,7 +261,6 @@ const Contact = () => {
               )}
 
               <form className="di-contact-form" onSubmit={handleSubmit}>
-                {/* Honeypot Field - Invisible for real users */}
                 <input
                   type="text"
                   name="website_hp"
@@ -356,7 +352,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* ================= MAP + VISIT (50-50) ================= */}
+      {/* ================= MAP + VISIT ================= */}
       <section className="di-map-section">
         <div className="di-container">
           <div className="di-text-center di-reveal">
@@ -370,7 +366,6 @@ const Contact = () => {
           </div>
 
           <div className="di-map-wrapper di-reveal">
-            {/* MAP — 50% */}
             <div className="di-map-box">
               <iframe
                 title="Dimension Infotech Map"
@@ -384,7 +379,6 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            {/* VISIT DETAILS — 50% */}
             <div className="di-visit-box">
               <div className="di-visit-icon"><MapPin size={24} /></div>
 
