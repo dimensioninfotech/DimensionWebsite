@@ -8,9 +8,7 @@ import {
   Code2,
   Wrench,
   ArrowRight,
-  Phone,
   Star,
-  Sparkles,
   Search,
   Layers,
   Server,
@@ -168,7 +166,7 @@ const Service = () => {
             Our Core <span>Services</span>
           </h1>
 
-          <p>End-to-End IT Solutions, Software Products & Professional IT Training.</p>
+          <p>End-to-End IT Solutions, Software Products &amp; Professional IT Training.</p>
         </div>
       </section>
 
@@ -327,7 +325,7 @@ const Service = () => {
 
             <div className="di-industry-note">
               <div className="di-note-icon">
-                <Sparkles size={20} />
+                <GraduationCap size={20} />
               </div>
               <h4>
                 We also provide fully <strong>Customized software</strong> as per your specific
@@ -337,9 +335,6 @@ const Service = () => {
           </div>
         </div>
       </section>
-
-      {/* ================= CTA ================= */}
-     
     </main>
   );
 };
