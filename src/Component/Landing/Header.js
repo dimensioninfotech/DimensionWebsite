@@ -11,15 +11,17 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  /* lock body scroll when mobile menu open */
+  /* Lock body scroll when mobile menu is open */
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [menuOpen]);
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
@@ -57,7 +59,6 @@ const Header = () => {
       {/* ============ NAVBAR ============ */}
       <nav className="di-navbar">
         <div className="di-navbar-container">
-
           {/* LOGO */}
           <Link
             to="/"
