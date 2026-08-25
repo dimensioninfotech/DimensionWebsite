@@ -213,7 +213,7 @@ const Home = () => {
                             <div className="di-highlight-item">
                                 <CheckCircle2 size={16} /> Fully Customizable
                             </div>
-                           
+                            
                         </div>
                     </div>
 
