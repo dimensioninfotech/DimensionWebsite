@@ -26,8 +26,7 @@ import {
     Hotel,
     UtensilsCrossed,
     Factory,
-    Store,
-    Phone
+    Store
 } from 'lucide-react';
 import './Home.css';
 
@@ -214,9 +213,7 @@ const Home = () => {
                             <div className="di-highlight-item">
                                 <CheckCircle2 size={16} /> Fully Customizable
                             </div>
-                            <div className="di-highlight-item">
-                                <CheckCircle2 size={16} /> 1 Year Free Service
-                            </div>
+                           
                         </div>
                     </div>
 
@@ -393,8 +390,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-            
         </main>
     );
 };
