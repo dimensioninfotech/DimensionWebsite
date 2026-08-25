@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import {
   GraduationCap, Code2, Server, Database, Layers, Smartphone, Plug,
   CheckCircle2, ArrowRight, Phone, Star, Clock, Users, Award, Briefcase,
   BookOpen, Target, Rocket, Send, Loader2, ChevronDown, MessageCircle,
-  Calendar, IndianRupee, Monitor, FileCode2, Quote
+  Monitor, FileCode2, Quote
 } from 'lucide-react';
 import './TrainingAndInternship.css';
 
