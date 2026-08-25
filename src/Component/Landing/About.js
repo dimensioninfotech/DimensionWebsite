@@ -27,9 +27,6 @@ const About = () => {
     softwares: 0
   });
 
-  const [activeCard, setActiveCard] = useState(null);
-  const [activeMv, setActiveMv] = useState(null);
-
   const statsRef = useRef(null);
   const countedRef = useRef(false);
 
@@ -252,10 +249,7 @@ const About = () => {
           </div>
 
           <div className="di-mv-grid">
-            <div
-              className={`di-mv-card di-reveal ${activeMv === 0 ? 'di-clicked' : ''}`}
-              onClick={() => setActiveMv(activeMv === 0 ? null : 0)}
-            >
+            <div className="di-mv-card di-reveal">
               <div className="di-mv-icon"><Target size={25} /></div>
               <h3>Our Mission</h3>
               <p>
@@ -265,11 +259,7 @@ const About = () => {
               </p>
             </div>
 
-            <div
-              className={`di-mv-card di-reveal ${activeMv === 1 ? 'di-clicked' : ''}`}
-              style={{ transitionDelay: '90ms' }}
-              onClick={() => setActiveMv(activeMv === 1 ? null : 1)}
-            >
+            <div className="di-mv-card di-reveal" style={{ transitionDelay: '90ms' }}>
               <div className="di-mv-icon"><Eye size={25} /></div>
               <h3>Our Vision</h3>
               <p>
@@ -298,9 +288,8 @@ const About = () => {
             {whyCards.map((c, i) => (
               <div
                 key={i}
-                className={`di-why-card di-reveal ${activeCard === i ? 'di-clicked' : ''}`}
+                className="di-why-card di-reveal"
                 style={{ transitionDelay: `${i * 70}ms` }}
-                onClick={() => setActiveCard(activeCard === i ? null : i)}
               >
                 <div className="di-why-icon">{c.icon}</div>
                 <h4>{c.title}</h4>
@@ -310,8 +299,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      
     </main>
   );
 };
