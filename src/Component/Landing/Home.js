@@ -20,7 +20,7 @@ import {
     Zap,
     Star,
     Building2,
-    Hospital,
+    Stethoscope,
     Car,
     GraduationCap,
     Hotel,
@@ -140,7 +140,7 @@ const Home = () => {
 
     const industries = [
         { icon: <Store size={23} />, name: 'FMCG & Kirana' },
-        { icon: <Hospital size={23} />, name: 'Medical & Pharma' },
+        { icon: <Stethoscope size={23} />, name: 'Medical & Pharma' },
         { icon: <Car size={23} />, name: 'Automobile' },
         { icon: <GraduationCap size={23} />, name: 'School Management' },
         { icon: <Hotel size={23} />, name: 'Hotel Management' },
@@ -213,7 +213,6 @@ const Home = () => {
                             <div className="di-highlight-item">
                                 <CheckCircle2 size={16} /> Fully Customizable
                             </div>
-                            
                         </div>
                     </div>
 
