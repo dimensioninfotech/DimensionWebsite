@@ -384,14 +384,14 @@ const Contact = () => {
 
               <h3>Dimension Infotech</h3>
               <p className="di-visit-addr">
-                Shop No. 34, 1st Floor, Samridhi Market,<br />
-                Budha Para, Raipur (Chhattisgarh) - 492001, India
+                Ring Road Near Hotel Emerald Kavir Bhawan<br />
+                Khushalpur Chaowk, Raipur (Chhattisgarh) - 492001, India
               </p>
 
               <ul className="di-visit-list">
                 <li><Clock size={15} /> Mon - Sat: 10:00 AM - 7:00 PM</li>
                 <li><Phone size={15} /> {MAIN_PHONE} <span className="di-main-tag">Main</span></li>
-                <li><Phone size={15} /> +91-90984 74135, +91-86023 73876</li>
+                <li><Phone size={15} /> +91-86023 73876</li>
                 <li><Mail size={15} /> infotechdimension@gmail.com</li>
                 <li><Globe size={15} /> www.dimensioninfotech.com</li>
               </ul>
