@@ -135,9 +135,9 @@ const Footer = () => {
                     <Phone size={16} />
                     <div className="di-footer-phones-grid">
                       <a href="tel:+916262913378" className="di-main-no">+91-62629 13378</a>
-                      <a href="tel:+919098474135">+91-90984 74135</a>
+        
                       <a href="tel:+918602373876">+91-86023 73876</a>
-                      <a href="tel:+917470898235">+91-74708 98235</a>
+                      
                     </div>
                   </li>
 
