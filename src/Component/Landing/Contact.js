@@ -103,9 +103,9 @@ const Contact = () => {
 
   const phones = [
     { no: '+91-62629 13378', tel: '+916262913378', main: true },
-    { no: '+91-90984 74135', tel: '+919098474135', main: false },
+   
     { no: '+91-86023 73876', tel: '+918602373876', main: false },
-    { no: '+91-74708 98235', tel: '+917470898235', main: false }
+   
   ];
 
   return (
