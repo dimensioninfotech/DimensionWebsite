@@ -197,10 +197,10 @@ const Contact = () => {
                 <div className="di-info-icon"><MapPin size={20} /></div>
                 <div>
                   <h4>Our Office</h4>
-                  <p>
-                    Shop No. 34, 1st Floor, Samridhi Market,<br />
-                    Budha Para, Raipur (C.G.) - 492001, India
-                  </p>
+                 <p className="di-visit-addr">
+                Ring Road Near Hotel Emerald Kavir Bhawan<br />
+                Khushalpur Chaowk, Raipur (Chhattisgarh) - 492001, India
+              </p>
                 </div>
               </div>
 
